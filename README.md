@@ -2,7 +2,11 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-AllKey is a desktop cryptography and wallet derivation toolkit for **macOS and Windows**. The macOS app uses SwiftUI; the Windows app uses Avalonia and .NET. Both share the Go core included in this repository. Key derivation and calculations run locally, without a WebView or a web service.
+AllKey is a **multi-coin private-key and mnemonic library** for **macOS and Windows**. Browse private keys and BIP39 / Electrum mnemonics, derive addresses in batches, and navigate by index, page or random selection. It supports **BTC, ETH, BSC, LTC, DOGE, TRX and SOL**, with BTC address-type selection, custom derivation paths and mnemonic search tools.
+
+**Local processing keeps your secrets on your computer.** Key generation, address derivation and mnemonic searches run locally. Private keys, mnemonics, passphrases and derivation paths are not sent to balance providers.
+
+**Query balances alongside your library results.** Configure providers to check public-address balances, filter funded addresses or transaction activity, and refresh results as needed. Balance requests send only public addresses, with primary/backup services, incremental updates and successful-result caching. See [Privacy and settings](#privacy-and-settings) for storage and configuration details.
 
 ## Download
 
