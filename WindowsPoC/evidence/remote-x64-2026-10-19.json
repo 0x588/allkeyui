@@ -1,0 +1,191 @@
+{
+  "testedAtUtc": "2026-10-19T04:02:20.1919565Z",
+  "status": "passed",
+  "osCaption": "Microsoft Windows 10 企业版",
+  "osVersion": "10.0.19045",
+  "cpuName": "Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz",
+  "cpuArchitectureCodes": [
+    9
+  ],
+  "bundleSha256": "360688f509d4196aed083158edd5efbcc847957b5db15b7823ffaa1f92e89193",
+  "iterationsPerRun": 10000,
+  "runs": [
+    {
+      "run": 0,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 383,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 383,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 1,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 355,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 355,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 2,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 351,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 351,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 3,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 349,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 349,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 4,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 329,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 329,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 5,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 327,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 327,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 6,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 352,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 352,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 7,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 337,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 337,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 8,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 333,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 333,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 9,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 344,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 344,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    },
+    {
+      "run": 10,
+      "exitCode": 0,
+      "summary": {
+        "platform": "Microsoft Windows 10.0.19045",
+        "architecture": "X64",
+        "vectorsPassed": 16,
+        "repeatedCalls": 10000,
+        "responsesReceived": 10016,
+        "responsesFreed": 10016,
+        "elapsedMs": 352,
+        "status": "passed"
+      },
+      "stdout": "Platform: Microsoft Windows 10.0.19045; process: X64\r\nPASS ETH private scalar one\r\nPASS BTC WIF normalization\r\nPASS Private key page navigation\r\nPASS BIP39 canonical zero entropy\r\nPASS BIP84 published receive vector\r\nPASS BIP86 published receive vector\r\nPASS 256 bit index remains a JSON string\r\nPASS Mnemonic directory first page\r\nPASS Mnemonic typo completion\r\nPASS Electrum standard creation\r\nPASS SHA256 abc\r\nPASS UTF8 input with Chinese and whitespace\r\nPASS UTF8 output with Chinese and whitespace\r\nPASS Structured invalid input error\r\nPASS Malformed JSON with Chinese error response\r\nPASS Null request pointer guard\r\n{\r\n  \"platform\": \"Microsoft Windows 10.0.19045\",\r\n  \"architecture\": \"X64\",\r\n  \"vectorsPassed\": 16,\r\n  \"repeatedCalls\": 10000,\r\n  \"responsesReceived\": 10016,\r\n  \"responsesFreed\": 10016,\r\n  \"elapsedMs\": 352,\r\n  \"status\": \"passed\"\r\n}\r\n",
+      "stderr": null
+    }
+  ],
+  "error": null
+}

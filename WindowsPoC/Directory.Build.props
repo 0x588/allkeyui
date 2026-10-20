@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../.build/windows-poc/managed/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

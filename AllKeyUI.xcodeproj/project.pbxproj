@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AllKeyUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AllKeyUIApp.swift */; };
+		A10000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* RootView.swift */; };
+		A10000000000000000000003 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* Theme.swift */; };
+		A10000000000000000000004 /* CoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* CoreModels.swift */; };
+		A10000000000000000000005 /* AllKeyCoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* AllKeyCoreClient.swift */; };
+		A10000000000000000000006 /* PrivateKeysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* PrivateKeysViewModel.swift */; };
+		A10000000000000000000007 /* PrivateKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* PrivateKeysView.swift */; };
+		A10000000000000000000008 /* MnemonicViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* MnemonicViews.swift */; };
+		A10000000000000000000009 /* CoreBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* CoreBridgeTests.swift */; };
+		A1000000000000000000000A /* BalanceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* BalanceClient.swift */; };
+		A1000000000000000000000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* Assets.xcassets */; };
+		A1000000000000000000000C /* BalanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* BalanceSettings.swift */; };
+		A1000000000000000000000D /* BalanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* BalanceSettingsView.swift */; };
+		A1000000000000000000000E /* PuzzleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* PuzzleModels.swift */; };
+		A1000000000000000000000F /* BTCPuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* BTCPuzzleView.swift */; };
+		A10000000000000000000010 /* btc-puzzles.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* btc-puzzles.json */; };
+		A10000000000000000000011 /* MnemonicTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* MnemonicTextEditor.swift */; };
+		A10000000000000000000012 /* CryptoCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* CryptoCalculator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50000000000000000000002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = AllKeyUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* AllKeyUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKeyUIApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* CoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModels.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* AllKeyCoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKeyCoreClient.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* PrivateKeysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeysViewModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* PrivateKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeysView.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* AllKeyCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllKeyCore.h; sourceTree = "<group>"; };
+		A20000000000000000000009 /* AllKeyUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AllKeyUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2000000000000000000000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000000000000000000000B /* AllKeyUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllKeyUI.entitlements; sourceTree = "<group>"; };
+		A2000000000000000000000C /* AllKeyUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllKeyUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000000000000000000000D /* MnemonicViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicViews.swift; sourceTree = "<group>"; };
+		A2000000000000000000000E /* CoreBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBridgeTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000000F /* AllKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000010 /* BalanceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceClient.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000000000000000000012 /* BalanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceSettings.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* BalanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceSettingsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* PuzzleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleModels.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* BTCPuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCPuzzleView.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* btc-puzzles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "btc-puzzles.json"; sourceTree = "<group>"; };
+		A20000000000000000000017 /* MnemonicTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicTextEditor.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* CryptoCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator/CryptoCalculator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* AllKeyUI */,
+				A4000000000000000000000D /* AllKeyUITests */,
+				A40000000000000000000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* AllKeyUI */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000003 /* App */,
+				A40000000000000000000004 /* Design */,
+				A40000000000000000000005 /* Models */,
+				A40000000000000000000006 /* Services */,
+				A40000000000000000000007 /* Features */,
+				A40000000000000000000009 /* Bridge */,
+				A4000000000000000000000A /* Resources */,
+				A2000000000000000000000B /* AllKeyUI.entitlements */,
+			);
+			path = AllKeyUI;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* AllKeyUIApp.swift */,
+				A20000000000000000000002 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000003 /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* CoreModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000005 /* AllKeyCoreClient.swift */,
+				A20000000000000000000010 /* BalanceClient.swift */,
+				A20000000000000000000012 /* BalanceSettings.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000000B /* PrivateKeys */,
+				A4000000000000000000000C /* Mnemonics */,
+				A4000000000000000000000E /* Settings */,
+				A4000000000000000000000F /* Puzzles */,
+				A20000000000000000000018 /* CryptoCalculator.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000C /* AllKeyUI.app */,
+				A2000000000000000000000F /* AllKeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000008 /* AllKeyCore.h */,
+				A20000000000000000000009 /* AllKeyUI-Bridging-Header.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000A /* Info.plist */,
+				A20000000000000000000011 /* Assets.xcassets */,
+				A20000000000000000000016 /* btc-puzzles.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000B /* PrivateKeys */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000006 /* PrivateKeysViewModel.swift */,
+				A20000000000000000000007 /* PrivateKeysView.swift */,
+			);
+			path = PrivateKeys;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000C /* Mnemonics */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000D /* MnemonicViews.swift */,
+				A20000000000000000000017 /* MnemonicTextEditor.swift */,
+			);
+			path = Mnemonics;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000D /* AllKeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000E /* CoreBridgeTests.swift */,
+			);
+			path = AllKeyUITests;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000013 /* BalanceSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000F /* Puzzles */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000014 /* PuzzleModels.swift */,
+				A20000000000000000000015 /* BTCPuzzleView.swift */,
+			);
+			path = Puzzles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* AllKeyUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000002 /* Build configuration list for PBXNativeTarget "AllKeyUI" */;
+			buildPhases = (
+				A70000000000000000000001 /* Build Go Core */,
+				A30000000000000000000002 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A30000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AllKeyUI;
+			productName = AllKeyUI;
+			productReference = A2000000000000000000000C /* AllKeyUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000003 /* AllKeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000003 /* Build configuration list for PBXNativeTarget "AllKeyUITests" */;
+			buildPhases = (
+				A30000000000000000000005 /* Sources */,
+				A30000000000000000000004 /* Frameworks */,
+				A30000000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = AllKeyUITests;
+			productName = AllKeyUITests;
+			productReference = A2000000000000000000000F /* AllKeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A50000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A50000000000000000000003 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = A50000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A60000000000000000000001 /* Build configuration list for PBXProject "AllKeyUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				zh_CN,
+			);
+			mainGroup = A40000000000000000000001;
+			productRefGroup = A40000000000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* AllKeyUI */,
+				A50000000000000000000003 /* AllKeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000B /* Assets.xcassets in Resources */,
+				A10000000000000000000010 /* btc-puzzles.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A70000000000000000000001 /* Build Go Core */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/NativeCore/main.go",
+				"$(SRCROOT)/NativeCore/go.mod",
+				"$(SRCROOT)/NativeCore/go.sum",
+			);
+			name = "Build Go Core";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/liballkeycore.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "set -euo pipefail\n\nGO_EXECUTABLE=\"\"\nfor CANDIDATE in \\\n  \"${GO_BINARY:-}\" \\\n  /opt/homebrew/bin/go \\\n  /usr/local/go/bin/go \\\n  /usr/local/bin/go; do\n  if [[ -n \"${CANDIDATE}\" && -x \"${CANDIDATE}\" ]]; then\n    GO_EXECUTABLE=\"${CANDIDATE}\"\n    break\n  fi\ndone\nif [[ -z \"${GO_EXECUTABLE}\" ]]; then\n  GO_EXECUTABLE=\"$(command -v go 2>/dev/null || true)\"\nfi\nif [[ -z \"${GO_EXECUTABLE}\" ]]; then\n  echo \"error: Go toolchain not found. Install Go, or set GO_BINARY in the AllKeyUI target build settings.\" >&2\n  exit 1\nfi\n\nCORE_SOURCE=\"${SRCROOT}/NativeCore/Core\"\nif [[ ! -f \"${CORE_SOURCE}/base/creator.go\" ]]; then\n  echo \"error: Vendored Go core not found at ${CORE_SOURCE}. Restore NativeCore/Core from source control.\" >&2\n  exit 1\nfi\n\ncd \"${SRCROOT}/NativeCore\"\nexport PATH=\"$(dirname \"${GO_EXECUTABLE}\"):/usr/bin:/bin:/usr/sbin:/sbin\"\nexport GOOS=darwin\nexport CGO_ENABLED=1\nexport CGO_CFLAGS=\"-mmacosx-version-min=${MACOSX_DEPLOYMENT_TARGET}\"\nexport CGO_LDFLAGS=\"-mmacosx-version-min=${MACOSX_DEPLOYMENT_TARGET}\"\nfor GO_TARGET_ARCH in arm64 amd64; do\n  export GOARCH=\"${GO_TARGET_ARCH}\"\n  \"${GO_EXECUTABLE}\" build -trimpath -buildmode=c-archive -o \"${DERIVED_FILE_DIR}/liballkeycore-${GO_TARGET_ARCH}.a\" .\ndone\n/usr/bin/lipo -create \\\n  \"${DERIVED_FILE_DIR}/liballkeycore-arm64.a\" \\\n  \"${DERIVED_FILE_DIR}/liballkeycore-amd64.a\" \\\n  -output \"${DERIVED_FILE_DIR}/liballkeycore.a\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+                A10000000000000000000012 /* CryptoCalculator.swift in Sources */,
+				A10000000000000000000001 /* AllKeyUIApp.swift in Sources */,
+				A10000000000000000000002 /* RootView.swift in Sources */,
+				A10000000000000000000003 /* Theme.swift in Sources */,
+				A10000000000000000000004 /* CoreModels.swift in Sources */,
+				A10000000000000000000005 /* AllKeyCoreClient.swift in Sources */,
+				A10000000000000000000006 /* PrivateKeysViewModel.swift in Sources */,
+				A10000000000000000000007 /* PrivateKeysView.swift in Sources */,
+				A10000000000000000000008 /* MnemonicViews.swift in Sources */,
+				A10000000000000000000011 /* MnemonicTextEditor.swift in Sources */,
+				A1000000000000000000000A /* BalanceClient.swift in Sources */,
+				A1000000000000000000000C /* BalanceSettings.swift in Sources */,
+				A1000000000000000000000D /* BalanceSettingsView.swift in Sources */,
+				A1000000000000000000000E /* PuzzleModels.swift in Sources */,
+				A1000000000000000000000F /* BTCPuzzleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000009 /* CoreBridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000000000000000000001 /* AllKeyUI */;
+			targetProxy = A90000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A80000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A80000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A80000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = AllKeyUI/AllKeyUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AllKeyUI/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AllKeyIn;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DERIVED_FILE_DIR)",
+				);
+				MARKETING_VERSION = 0.1.4;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lallkeycore",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.allkeyin.AllKeyUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AllKeyUI/Bridge/AllKeyUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Debug;
+		};
+		A80000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = AllKeyUI/AllKeyUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AllKeyUI/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AllKeyIn;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DERIVED_FILE_DIR)",
+				);
+				MARKETING_VERSION = 0.1.4;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lallkeycore",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.allkeyin.AllKeyUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AllKeyUI/Bridge/AllKeyUI-Bridging-Header.h";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Release;
+		};
+		A80000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.allkeyin.AllKeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllKeyUI.app/Contents/MacOS/AllKeyUI";
+			};
+			name = Debug;
+		};
+		A80000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.allkeyin.AllKeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllKeyUI.app/Contents/MacOS/AllKeyUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60000000000000000000001 /* Build configuration list for PBXProject "AllKeyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000001 /* Debug */,
+				A80000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000002 /* Build configuration list for PBXNativeTarget "AllKeyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000003 /* Debug */,
+				A80000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000003 /* Build configuration list for PBXNativeTarget "AllKeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000005 /* Debug */,
+				A80000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A50000000000000000000002 /* Project object */;
+}

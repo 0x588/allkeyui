@@ -1,0 +1,25 @@
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+NativeCore/liballkeycore.a
+NativeCore/liballkeycore.h
+
+
+# Private working-copy metadata, local documentation and generated artifacts
+/docs/
+.svn/
+.DS_Store
+**/bin/
+**/obj/
+*.user
+*.suo
+.env
+.env.*
+!.env.example
+balance-settings.json
+balance-settings*.json
+*.p12
+*.pfx
+*.pem
+*.key

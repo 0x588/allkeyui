@@ -1,0 +1,100 @@
+[
+  {
+    "name": "ETH private scalar one",
+    "operation": "keys",
+    "request": {"index":"1","coins":["ETH"],"count":1,"op":"current"},
+    "expect": {"ok":true,"data.index":"1","data.items.0.addr":"0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf"}
+  },
+  {
+    "name": "BTC WIF normalization",
+    "operation": "keys",
+    "request": {"index":"KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn","coins":["BTC"],"count":1,"btcType":"legacy"},
+    "expect": {"ok":true,"data.index":"1","data.wifCompressed":true,"data.items.0.addr":"1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH"}
+  },
+  {
+    "name": "Private key page navigation",
+    "operation": "keys",
+    "request": {"index":"1","coins":["ETH"],"count":4,"op":"next"},
+    "expect": {"ok":true,"data.index":"5"}
+  },
+  {
+    "name": "BIP39 canonical zero entropy",
+    "operation": "mnemonic",
+    "request": {"bitSize":128,"count":1,"coins":["ETH"],"index":"0","op":"current"},
+    "expect": {"ok":true,"data.index":"0","data.mnemonic":"abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about","data.items.0.addr":"0x9858EfFD232B4033E47d90003D41EC34EcaEda94"}
+  },
+  {
+    "name": "BIP84 published receive vector",
+    "operation": "mnemonic",
+    "request": {"bitSize":128,"count":1,"coins":["BTC"],"index":"0","op":"current","btcType":"segwit"},
+    "expect": {"ok":true,"data.items.0.path":"m/84'/0'/0'/0/0","data.items.0.addr":"bc1qcr8te4kr609gcawutmrza0j4xv80jy8z306fyu"}
+  },
+  {
+    "name": "BIP86 published receive vector",
+    "operation": "mnemonic",
+    "request": {"bitSize":128,"count":1,"coins":["BTC"],"index":"0","op":"current","btcType":"taproot"},
+    "expect": {"ok":true,"data.items.0.addr":"bc1p5cyxnuxmeuwuvkwfem96lqzszd02n6xdcjrs20cac6yqjjwudpxqkedrcr"}
+  },
+  {
+    "name": "256 bit index remains a JSON string",
+    "operation": "mnemonic",
+    "request": {"bitSize":256,"count":1,"coins":["ETH"],"index":"115792089237316195423570985008687907853269984665640564039457584007913129639935","op":"current"},
+    "expect": {"ok":true,"data.index":"115792089237316195423570985008687907853269984665640564039457584007913129639935"}
+  },
+  {
+    "name": "Mnemonic directory first page",
+    "operation": "directory",
+    "request": {"bitSize":128,"pageSize":10,"coins":["ETH"],"index":"0","op":"first"},
+    "expect": {"ok":true,"data.start":"0","data.end":"9","data.hasPrevious":false,"data.items.0.items.0.addr":"0x9858EfFD232B4033E47d90003D41EC34EcaEda94"}
+  },
+  {
+    "name": "Mnemonic typo completion",
+    "operation": "inspect",
+    "request": {"text":"abndon about","bitSize":128,"completionPosition":0},
+    "expect": {"ok":true,"data.wordCount":2,"data.invalidWords.0.position":0,"data.suggestions.0":"abandon"}
+  },
+  {
+    "name": "Electrum standard creation",
+    "operation": "electrum",
+    "request": {"count":1,"addressType":"standard","index":"0","op":"current"},
+    "expect": {"ok":true,"data.items.0.coin":"BTC","data.items.0.key_format":"wif"}
+  },
+  {
+    "name": "SHA256 abc",
+    "operation": "calculate",
+    "request": {"operation":"sha256-text","input":"abc"},
+    "expect": {"ok":true,"data.output":"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"}
+  },
+  {
+    "name": "UTF8 input with Chinese and whitespace",
+    "operation": "calculate",
+    "raw": true,
+    "request": "{\"operation\":\"ascii-to-hex\",\"input\":\" 中\\n\"}",
+    "expect": {"ok":true,"data.output":"20e4b8ad0a"}
+  },
+  {
+    "name": "UTF8 output with Chinese and whitespace",
+    "operation": "calculate",
+    "request": {"operation":"hex-to-ascii","input":"20e4b8ad0a"},
+    "expect": {"ok":true,"data.output":" 中\n"}
+  },
+  {
+    "name": "Structured invalid input error",
+    "operation": "keys",
+    "request": {"index":"xyz","coins":["BTC"],"count":1},
+    "expect": {"ok":false,"error.code":"invalid_request"}
+  },
+  {
+    "name": "Malformed JSON with Chinese error response",
+    "operation": "keys",
+    "raw": true,
+    "request": "{",
+    "expect": {"ok":false,"error.code":"invalid_request","error.message":"请求格式无效"}
+  },
+  {
+    "name": "Null request pointer guard",
+    "operation": "keys",
+    "request": null,
+    "expect": {"ok":false,"error.code":"invalid_request","error.message":"请求不能为空"}
+  }
+]

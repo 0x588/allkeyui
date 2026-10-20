@@ -1,0 +1,278 @@
+[
+  {
+    "id": "dec-to-hex",
+    "category": "basic",
+    "title": "十进制 → HEX",
+    "detail": "非负整数转换为十六进制；支持大整数。"
+  },
+  {
+    "id": "hex-to-dec",
+    "category": "basic",
+    "title": "HEX → 十进制",
+    "detail": "整数转换；支持 0x 前缀与奇数位 HEX。"
+  },
+  {
+    "id": "bin-to-hex",
+    "category": "basic",
+    "title": "二进制 → HEX",
+    "detail": "只接受 0 和 1，保留数值。"
+  },
+  {
+    "id": "hex-to-bin",
+    "category": "basic",
+    "title": "HEX → 二进制",
+    "detail": "每个 HEX 字符展开为 4 位，保留前导零。"
+  },
+  {
+    "id": "ascii-to-hex",
+    "category": "basic",
+    "title": "UTF-8 文本 → HEX",
+    "detail": "按 UTF-8 编码，保留空格、换行与中文。"
+  },
+  {
+    "id": "hex-to-ascii",
+    "category": "basic",
+    "title": "HEX → UTF-8 文本",
+    "detail": "严格检查 UTF-8 字节，不以乱码替代非法输入。"
+  },
+  {
+    "id": "priv-to-all",
+    "category": "privateKey",
+    "title": "私钥 → 全部格式",
+    "detail": "一次查看 HEX、两种 WIF、公钥、BTC 五种地址与 EVM 地址。"
+  },
+  {
+    "id": "priv-to-pub-c",
+    "category": "privateKey",
+    "title": "私钥 → 压缩公钥",
+    "detail": "返回 33 字节 secp256k1 公钥。"
+  },
+  {
+    "id": "priv-to-pub-u",
+    "category": "privateKey",
+    "title": "私钥 → 未压缩公钥",
+    "detail": "返回 65 字节 secp256k1 公钥。"
+  },
+  {
+    "id": "priv-to-addr-c",
+    "category": "privateKey",
+    "title": "私钥 → Legacy(c)",
+    "detail": "使用压缩公钥派生 BTC 主网 P2PKH 地址。"
+  },
+  {
+    "id": "priv-to-addr-u",
+    "category": "privateKey",
+    "title": "私钥 → Legacy(u)",
+    "detail": "使用未压缩公钥派生 BTC 主网 P2PKH 地址。"
+  },
+  {
+    "id": "priv-to-addr-evm",
+    "category": "privateKey",
+    "title": "私钥 → EVM 地址",
+    "detail": "Keccak-256 派生并生成 EIP-55 校验地址。"
+  },
+  {
+    "id": "pub-compress",
+    "category": "publicKey",
+    "title": "压缩公钥",
+    "detail": "验证曲线点，返回 02 / 03 开头的公钥。"
+  },
+  {
+    "id": "pub-decompress",
+    "category": "publicKey",
+    "title": "展开公钥",
+    "detail": "验证曲线点，返回 04 开头的公钥。"
+  },
+  {
+    "id": "pub-to-addr",
+    "category": "publicKey",
+    "title": "公钥 → Legacy 地址",
+    "detail": "沿用输入公钥的压缩或未压缩格式。"
+  },
+  {
+    "id": "pub-to-addr-evm",
+    "category": "publicKey",
+    "title": "公钥 → EVM 地址",
+    "detail": "压缩公钥先还原曲线点，再派生 EIP-55 地址。"
+  },
+  {
+    "id": "pub-to-hash160",
+    "category": "publicKey",
+    "title": "公钥 → Hash160",
+    "detail": "对输入公钥的序列化字节计算 SHA-256 + RIPEMD-160。"
+  },
+  {
+    "id": "pub-validate",
+    "category": "publicKey",
+    "title": "校验公钥",
+    "detail": "检查长度、前缀及 secp256k1 曲线点。"
+  },
+  {
+    "id": "priv-to-wif-c",
+    "category": "wif",
+    "title": "私钥 → WIF(c)",
+    "detail": "Bitcoin 主网压缩格式，K / L 开头。"
+  },
+  {
+    "id": "priv-to-wif-u",
+    "category": "wif",
+    "title": "私钥 → WIF(u)",
+    "detail": "Bitcoin 主网未压缩格式，5 开头。"
+  },
+  {
+    "id": "wif-to-priv",
+    "category": "wif",
+    "title": "WIF → HEX 私钥",
+    "detail": "校验网络、校验和、压缩标记与私钥范围。"
+  },
+  {
+    "id": "wif-validate",
+    "category": "wif",
+    "title": "校验 WIF",
+    "detail": "显示主网 WIF 压缩属性及对应 Legacy 地址。"
+  },
+  {
+    "id": "bip38-encrypt",
+    "category": "bip38",
+    "title": "加密私钥",
+    "detail": "非 EC-multiply BIP38。WIF 保留压缩属性；HEX 使用下方选项。"
+  },
+  {
+    "id": "bip38-decrypt",
+    "category": "bip38",
+    "title": "解密私钥",
+    "detail": "支持 0x0142 非 EC-multiply 格式；验证口令后输出 WIF、HEX 和地址。"
+  },
+  {
+    "id": "hash160-to-addr",
+    "category": "address",
+    "title": "Hash160 → Legacy",
+    "detail": "输入 20 字节公钥哈希，编码为 BTC 主网 P2PKH。"
+  },
+  {
+    "id": "hash160-to-segwit",
+    "category": "address",
+    "title": "Hash160 → SegWit",
+    "detail": "输入 20 字节压缩公钥哈希，编码为 BTC 主网 P2WPKH。"
+  },
+  {
+    "id": "addr-to-hash160",
+    "category": "address",
+    "title": "地址 → 载荷",
+    "detail": "识别公钥哈希、脚本哈希和 witness program，显示类型与长度。"
+  },
+  {
+    "id": "addr-validate",
+    "category": "address",
+    "title": "校验 BTC / EVM 地址",
+    "detail": "校验 BTC 主网地址；混合大小写 EVM 地址须通过 EIP-55。"
+  },
+  {
+    "id": "sha256",
+    "category": "hash",
+    "title": "SHA-256 · HEX",
+    "detail": "对 HEX 表示的原始字节计算 SHA-256。"
+  },
+  {
+    "id": "sha256-text",
+    "category": "hash",
+    "title": "SHA-256 · 文本",
+    "detail": "对完整 UTF-8 文本计算摘要，保留首尾空白和换行。"
+  },
+  {
+    "id": "ripemd160",
+    "category": "hash",
+    "title": "RIPEMD-160",
+    "detail": "输入 HEX 字节，输出 20 字节摘要。"
+  },
+  {
+    "id": "hash160",
+    "category": "hash",
+    "title": "Hash160",
+    "detail": "RIPEMD160(SHA256(bytes))，输入为 HEX 字节。"
+  },
+  {
+    "id": "keccak256",
+    "category": "hash",
+    "title": "Keccak-256",
+    "detail": "Ethereum 使用的 Keccak，区别于 NIST SHA3-256。"
+  },
+  {
+    "id": "double-sha256",
+    "category": "hash",
+    "title": "双 SHA-256",
+    "detail": "SHA256(SHA256(bytes))，输入为 HEX 字节。"
+  },
+  {
+    "id": "base58-enc",
+    "category": "base58",
+    "title": "Base58 编码",
+    "detail": "输入 HEX 字节，保留前导零字节。"
+  },
+  {
+    "id": "base58-dec",
+    "category": "base58",
+    "title": "Base58 解码",
+    "detail": "返回完整原始 HEX 字节，不校验校验和。"
+  },
+  {
+    "id": "base58check-enc",
+    "category": "base58",
+    "title": "Base58Check 编码",
+    "detail": "输入含版本字节的完整 HEX 载荷，自动附加校验和。"
+  },
+  {
+    "id": "base58check-dec",
+    "category": "base58",
+    "title": "Base58Check 解码",
+    "detail": "校验后返回含版本字节的 HEX 载荷。"
+  },
+  {
+    "id": "bech32-enc",
+    "category": "bech32",
+    "title": "Bech32 · SegWit 编码",
+    "detail": "20 字节公钥哈希 → bc1q；固定 BTC 主网 v0。"
+  },
+  {
+    "id": "bech32-dec",
+    "category": "bech32",
+    "title": "Bech32 · SegWit 解码",
+    "detail": "检查主网、版本、校验和、载荷长度与填充。"
+  },
+  {
+    "id": "bech32m-enc",
+    "category": "bech32",
+    "title": "Bech32m · v1 编码",
+    "detail": "32 字节输出公钥 → bc1p；仅编码，不执行 Taproot tweak。"
+  },
+  {
+    "id": "bech32m-dec",
+    "category": "bech32",
+    "title": "Bech32m · v1 解码",
+    "detail": "检查 BTC 主网 v1 地址并显示 32 字节载荷。"
+  },
+  {
+    "id": "reverse-bytes",
+    "category": "utility",
+    "title": "反转字节",
+    "detail": "按字节反转 HEX，不是反转字符。"
+  },
+  {
+    "id": "pad-hex",
+    "category": "utility",
+    "title": "补齐 64 位 HEX",
+    "detail": "支持单字符 HEX；左补零，超过 32 字节时报错。"
+  },
+  {
+    "id": "checksum-evm",
+    "category": "utility",
+    "title": "生成 EIP-55 地址",
+    "detail": "20 字节地址生成校验大小写；不改变地址数值。"
+  },
+  {
+    "id": "random-key",
+    "category": "utility",
+    "title": "随机私钥",
+    "detail": "使用系统密码学随机源，生成 1 ≤ d < n 的 32 字节私钥。"
+  }
+]

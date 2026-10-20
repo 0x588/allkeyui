@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "platform": "macOS 27.0.1",
+  "architecture": "Arm64",
+  "checks": [
+    "private key page derives ETH vector",
+    "private key next navigation",
+    "invalid input preserves previous valid page",
+    "BIP39 page derives canonical vector",
+    "address pagination preserves mnemonic",
+    "missing-word template lookup",
+    "mnemonic directory first page",
+    "mnemonic directory independent pagination",
+    "Electrum page generates addresses",
+    "calculator SHA256 vector",
+    "calculator preserves Chinese and whitespace",
+    "calculator line batching",
+    "puzzle catalog loads 160 entries",
+    "puzzle range enters private key page",
+    "all six sections instantiate",
+    "settings UI saves and applies dark theme",
+    "settings UI persists appearance",
+    "desktop clipboard copy",
+    "clipboard clear preserves replacement",
+    "clipboard clear releases owned value"
+  ],
+  "error": null
+}

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>AllKeyUI</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets/app.ico</ApplicationIcon>
+    <Version>0.1.4</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.4" />
+    <ProjectReference Include="../AllKey.Core/AllKey.Core.csproj" />
+    <AvaloniaResource Include="Assets/**" />
+    <None Include="../../AllKeyUI/Resources/btc-puzzles.json" Link="btc-puzzles.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Assets/calculator-operations.json" Link="calculator-operations.json" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="../AllKey.Tests/VerificationSuite.cs" Link="Verification/VerificationSuite.cs" />
+  </ItemGroup>
+</Project>
